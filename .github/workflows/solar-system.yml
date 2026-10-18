@@ -92,7 +92,7 @@ jobs:
      steps:
      - uses: helm/kind-action@v1
        name: install helm k8s
-     - name: docker/login-action@v3
+     - name: get pods
        run: |
            sleep 60
            kubectl -n kube-system get pod
